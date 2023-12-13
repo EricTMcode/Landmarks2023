@@ -27,16 +27,16 @@ struct LandmarkList: View {
                     NavigationLink {
                         LandmarkDetail(landmark: landmark)
                     } label: {
-                    LandmarkRow(landmark: landmark)
+                        LandmarkRow(landmark: landmark)
+                    }
                 }
             }
-        }
             .animation(.default, value: filteredLandmarks)
-        .navigationTitle("Landmarks")
-    } detail: {
-        Text("Select a Landmark")
+            .navigationTitle("Landmarks")
+        } detail: {
+            Text("Select a Landmark")
+        }
     }
-}
 }
 
 #Preview {
